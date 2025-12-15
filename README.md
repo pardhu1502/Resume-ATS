@@ -13,18 +13,24 @@ A web-based **Resume ATS Analyzer** that evaluates resumes against job descripti
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Python, Flask
-- **Libraries:** NLP / Text processing libraries
-- **Deployment:** (Add platform if deployed, e.g., Render / Vercel / AWS)
+- **Backend:** ExpressJs
+- **Libraries:** Cors, Multer, pdf-parse, express
+- **Deployment:** Render
 
 ## 📂 Project Structure
 ```
-Resume-ATS/
-│── templates/
-│── static/
-│── app.py
-│── requirements.txt
-│── README.md
+Project Structure
+│
+├── backend/              # Backend logic and API handling
+│
+├── node_modules/         # Installed project dependencies
+│
+├── public/               # Static assets
+│
+├── src/                  # Frontend source code
+├── package.json        
+└──  README.md        
+
 ```
 
 ## ⚙️ Installation & Setup
