@@ -8,7 +8,6 @@ A web-based **Resume ATS Analyzer** that evaluates resumes against job descripti
 - Paste job description for comparison
 - ATS score calculation
 - Keyword matching analysis
-- Resume improvement suggestions
 - Simple and user-friendly UI
 
 ## 🛠️ Tech Stack
