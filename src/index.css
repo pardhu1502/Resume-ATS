@@ -1,0 +1,249 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===== Background ===== */
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1b1f2a, #0a0d14);
+  color: #eaeaf0;
+}
+
+/* ===== Main Container ===== */
+.app-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(180deg, #121826, #0c101a);
+  border-radius: 20px;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.8),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Heading ===== */
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  font-weight: 800;
+
+  /* Fallback color (IMPORTANT) */
+  color: #e5e7eb;
+
+  /* Gradient text */
+  background: linear-gradient(90deg, #7f5cff, #38bdf8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ===== Inputs ===== */
+input[type="file"] {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #eaeaf0;
+  border: 1px solid #1e293b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+  border-color: #7f5cff;
+}
+
+/* ===== Textarea ===== */
+textarea {
+  width: 100%;
+  min-height: 180px;
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #0f172a;
+  color: #eaeaf0;
+  border: 1px solid #1e293b;
+  resize: none;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: border 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* ===== Analyze Button ===== */
+button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 18px;
+  border-radius: 16px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #7f5cff, #38bdf8);
+  box-shadow: 0 10px 30px rgba(127, 92, 255, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(56, 189, 248, 0.5);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ===== Analysis Card ===== */
+.analysis-card {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Score ===== */
+.score {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #22c55e;
+  text-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  margin: 25px 0 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #c7d2fe;
+}
+
+/* ===== Skills Grid ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ===== Skill Tags ===== */
+.skill {
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: #1e293b;
+  color: #eaeaf0;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Matched Skills ===== */
+.skill.matched {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #022c22;
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+}
+
+/* ===== Missing Skills ===== */
+.skill.missing {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  color: #450a0a;
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.35);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .score {
+    font-size: 2.8rem;
+  }
+}
+
+.result-card {
+  background: #111827;
+  padding: 25px;
+  border-radius: 16px;
+  margin-top: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.score {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+
+.score span {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.skills-box {
+  padding: 20px;
+  border-radius: 12px;
+  min-height: 200px;
+}
+
+.skills-box h3 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.skills-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-box li {
+  background: #1f2937;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Matched */
+.skills-box.matched {
+  border: 2px solid #22c55e;
+}
+
+.skills-box.matched h3 {
+  color: #22c55e;
+}
+
+/* Missing */
+.skills-box.missing {
+  border: 2px solid #ef4444;
+}
+
+.skills-box.missing h3 {
+  color: #ef4444;
+}
