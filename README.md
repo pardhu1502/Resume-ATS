@@ -35,32 +35,25 @@ git clone https://github.com/pardhu1502/Resume-ATS.git
 cd Resume-ATS
 ```
 
-2. **Create virtual environment (optional but recommended)**
+2. **Run the application**
 ```bash
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-```
+npm run dev
 
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Run the application**
-```bash
-python app.py
-```
-
-5. Open browser and navigate to:
-```
-http://127.0.0.1:5000
+backend/
+node index.js
 ```
 
 ## 🌐 Live Demo
 👉 **Live:** https://resume-ats-1-llgy.onrender.com/
 
 ## 📸 Screenshots
-(Add screenshots of UI and analysis results here)
+
+<img width="1919" height="1023" alt="Screenshot 2025-12-15 121846" src="https://github.com/user-attachments/assets/76206c8b-50dd-495e-81e7-df91086332a3" />
+
+<img width="1910" height="874" alt="image" src="https://github.com/user-attachments/assets/d4be9974-3d5e-4a16-912b-63596e0e484a" />
+
+<img width="1918" height="1014" alt="image" src="https://github.com/user-attachments/assets/7b39e00c-879a-4899-95bc-e0640eb36b24" />
+
 
 ## 📈 Future Enhancements
 - Resume parsing using advanced NLP
