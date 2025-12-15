@@ -22,7 +22,7 @@ async function handleAnalyze() {
   formData.append("jobDescription", jobDescription);
 
   try {
-    const response = await fetch("http://localhost:5000/api/analyze-resume", {
+    const response = await fetch("https://resume-ats-2ozf.onrender.com/api/analyze-resume", {
       method: "POST",
       body: formData,
     });
