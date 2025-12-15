@@ -70,7 +70,7 @@ Feel free to fork the repository and submit a pull request.
 This project is licensed under the **MIT License**.
 
 ## 👨‍💻 Author
-**Pardhu**  
+**Palli Pardha Saradhi Charan**  
 - GitHub: https://github.com/pardhu1502
 
 ---
